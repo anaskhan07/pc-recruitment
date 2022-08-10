@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}
+  QUIZO | Admin 
+{% endblock %}
+
+{% block body %}
+<div style="color: white; font-size: 50px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+   Welcome Admin
+</div>
+<hr>
+<p style="color: white;">Analyse and manage student data from this dashboard. Thankyou </p>
+
+{% endblock %}
+
+
+{% block navbar%}
+<li class="nav-item">
+    <a href="/add" class="nav-link">
+      <p>
+        Add Questions
+      </p>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a href="/showdetails" class="nav-link">
+      <p>
+        Student Details
+      </p>
+    </a>
+  </li>
+
+  <li class="nav-item">
+    <a href="/showall" class="nav-link">
+      <p>
+        Check All Results
+      </p>
+    </a>
+  </li>
+<li class="nav-item">
+    <a href="/logout" class="nav-link">
+      <p>
+        Logout
+      </p>
+    </a>
+  </li>
+{% endblock %}

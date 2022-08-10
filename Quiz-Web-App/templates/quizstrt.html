@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}
+  PC | User
+{% endblock %}
+
+{% block body %}
+<div style="color: white; font-size: 50px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+   Let's Begin!
+</div>
+<hr>
+<form id="quickForm" action="/quiz" method="POST">
+      <div class="form-group mb-0"  style="color:white; margin-top: 2.5rem;">
+        You will be given Multiple Choice Questions that will test your aptitude, technical knowledge,etc. You have to answer carefully as your selection is based on it.<br> Goodluck :)
+        <br><br>
+          <button type="submit" class="btn btn-primary quistrt" style=" left: 190px">Start Quiz</button>
+      </div>
+    </div>
+  </form>
+{% endblock %}
+
+
+{% block navbar%}
+<li class="nav-item">
+    <a href="/quiz" class="nav-link">
+<!--<i class="nav-icon fas fa-tachometer-alt"></i> -->
+      <p class="active">
+        Take Quiz
+      </p>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a href="/" class="nav-link">
+      <p>
+        Home
+      </p>
+    </a>
+  </li>
+<li class="nav-item">
+    <a href="/logout" class="nav-link">
+      <p>
+        Logout
+      </p>
+    </a>
+  </li>
+{% endblock %}

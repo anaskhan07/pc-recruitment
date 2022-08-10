@@ -1,0 +1,17 @@
+home>fill details & register>login->user.html>take quiz> quizstrt > quiz> submit>
+thankyou> logout>home
+
+onlogin>
+home
+take quiz
+my account
+
+onlogout>
+home
+
+
+onlogin>
+quizstrt>
+quiz
+
+

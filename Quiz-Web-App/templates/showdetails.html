@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block title %}
+    PC | Student Details
+{% endblock %}
+
+
+{% block body %}
+
+<div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <label style=" font-size: 1.5rem;">Student Details</label>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body table-responsive p-0">
+          <table class="table table-hover text-nowrap">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Roll No.</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Place</th>
+                <th>Skills</th>
+                <th>Reason</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for details in list %}
+              <tr>
+                <td>{{details.firstName}}{{details.lastName}}</td>
+                <td>{{details.std}}</td>
+                <td>{{details.roll}}</td>
+                <td>{{details.email}}</td>
+                <td>{{details.phoneNumber}}</td>
+                <td>{{details.place}}</td>
+                <td>{{details.skills}}</td>
+                <td>{{details.reason}}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        <!-- /.card-body -->
+      </div>
+      <!-- /.card -->
+    </div>
+  </div>
+  <!-- /.row -->
+
+{% endblock %}
+
+
+{% block navbar%}
+<li class="nav-item">
+    <a href="/add" class="nav-link">
+      <p>
+        Add Questions
+      </p>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a href="/showall" class="nav-link">
+      <p>
+        Check All Results
+      </p>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a href="/showdetails" class="nav-link">
+      <p>
+        Student Details
+      </p>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a href="/logout" class="nav-link">
+      <p>
+        Logout
+      </p>
+    </a>
+  </li>
+{% endblock %}

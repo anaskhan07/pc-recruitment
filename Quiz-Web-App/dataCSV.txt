@@ -1,0 +1,3 @@
+Alfiya,Shaikh,BECO,19CO62,alfiyashaikh@gmail.com,9898989898,123456789,Kurla,None None,Already_Joined,4,4,4
+zahra,sayed,BECO,19co07,sayedzahra2001@gmail.com,8638173827,123456789,kurla,python,Already_Joined,2,4,4
+Ameeruddin,Bagdadi,BECO,19CO12,ameerb0601@gmail.com,9898989898,123456789,Mumbra,Many,Already_Joined,20,20,20
